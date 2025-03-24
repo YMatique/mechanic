@@ -36,7 +36,7 @@ class FirstForm extends Component
     ];
     public function mount()
     {
-        $this->stamp = now()->toDateTimeLocalString(); // Preenche com data/hora atual
+        // $this->stamp = now()->toDateTimeLocalString(); // Preenche com data/hora atual
     }
     public function save()
     {
