@@ -13,8 +13,12 @@
                 <div class=" p-6 rounded-lg w-full max-w-6xl mx-auto">
                     <h1 class="text-2xl font-bold text-gray-800 mb-6 text-center">Lista de Detalhes de Ordens de Reparação</h1>
 
-                    <div class="mb-4">
-                        <input type="text" wire:model.debounce.500ms="search" class="w-full p-2 border rounded-lg dark:bg-gray-800" placeholder="Pesquisar por Ordem de Reparação...">
+                    <!-- Campo de Busca e Botão de Exportar -->
+                    <div class="flex justify-between mb-4">
+                        <input type="text" wire:model.debounce.500ms="search" class="w-3/4 p-2 border rounded-lg dark:bg-gray-800" placeholder="Pesquisar por Ordem de Reparação...">
+                        <button wire:click="export" class="bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700">
+                            Exportar Excel
+                        </button>
                     </div>
 
                     <div class="overflow-x-auto">

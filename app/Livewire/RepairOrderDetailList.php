@@ -6,6 +6,8 @@ use Livewire\Component;
 use App\Models\RepairOrderDetail;
 use Livewire\WithPagination;
 use Livewire\Attributes\Layout;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\RepairOrderDetailsExport;
 
 class RepairOrderDetailList extends Component
 {
@@ -17,7 +19,10 @@ class RepairOrderDetailList extends Component
     {
         $this->resetPage();
     }
-
+    public function export()
+    {
+        return Excel::download(new RepairOrderDetailsExport($this->search), 'repair_order_details_' . now()->format('Y-m-d') . '.xlsx');
+    }
     #[Layout('layouts.app')]
     public function render()
     {
