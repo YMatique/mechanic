@@ -6,7 +6,8 @@ use Livewire\Component;
 use App\Models\RepairOrder;
 use Livewire\WithPagination;
 use Livewire\Attributes\Layout;
-
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\RepairOrdersExport;
 
 class RepairOrderList extends Component
 {
@@ -94,7 +95,8 @@ class RepairOrderList extends Component
     // Exportar para CSV
     public function export()
     {
-        // return Excel::download(new RepairOrdersExport($this->search), 'repair_orders_' . now()->format('Y-m-d') . '.csv');
+
+        return Excel::download(new RepairOrdersExport($this->search), 'repair_orders_' . now()->format('Y-m-d') . '.xlsx');
     }
 
     private function resetForm()

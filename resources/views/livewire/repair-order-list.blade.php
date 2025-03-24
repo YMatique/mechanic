@@ -12,7 +12,7 @@
 
                 <!-- resources/views/livewire/repair-order-list.blade.php -->
 
-                <div class=" rounded-lg  w-full max-w-6xl mx-auto">
+                <div class="pt-4 pb-4 rounded-lg  w-full max-w-6xl mx-auto">
                     <h1 class="text-2xl font-bold text-gray-800 mb-6 text-center">Lista de Ordens de Reparação</h1>
 
                     @if (session()->has('success'))
