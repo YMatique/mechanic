@@ -1,7 +1,7 @@
 <div>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Formulário 1') }}
+            {{ __('Factura') }}
         </h2>
     </x-slot>
 
@@ -10,7 +10,7 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <!-- resources/views/livewire/repair-order-invoice-list.blade.php -->
 
-                <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-6xl mx-auto">
+                <div class=" pt-6 pb-6 rounded-lg w-full max-w-6xl mx-auto">
                     <h1 class="text-2xl font-bold text-gray-800 mb-6 text-center">Lista de Faturações de Ordens de Reparação</h1>
 
                     @if (session()->has('success'))
