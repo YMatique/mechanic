@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('technicians', function (Blueprint $table) {
             $table->id();
+            $table->string('code')->unique(); // Ex.: DN201
+            $table->string('name');
             $table->timestamps();
         });
     }
