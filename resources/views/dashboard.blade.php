@@ -15,7 +15,7 @@
                             <div class="p-4 md:p-5">
                                 <div class="flex items-center gap-x-2">
                                     <p class="text-xs uppercase tracking-wide text-gray-500 dark:text-neutral-500">
-                                        Total users
+                                        Ordens de Reparação
                                     </p>
                                     <div class="hs-tooltip">
                                         <div class="hs-tooltip-toggle">
@@ -54,7 +54,7 @@
                             <div class="p-4 md:p-5">
                                 <div class="flex items-center gap-x-2">
                                     <p class="text-xs uppercase tracking-wide text-gray-500 dark:text-neutral-500">
-                                        Sessions
+                                        Técnicos
                                     </p>
                                 </div>
 
@@ -72,7 +72,7 @@
                             <div class="p-4 md:p-5">
                                 <div class="flex items-center gap-x-2">
                                     <p class="text-xs uppercase tracking-wide text-gray-500 dark:text-neutral-500">
-                                        Avg. Click Rate
+                                        Facturas
                                     </p>
                                 </div>
 
@@ -99,7 +99,7 @@
                             <div class="p-4 md:p-5">
                                 <div class="flex items-center gap-x-2">
                                     <p class="text-xs uppercase tracking-wide text-gray-500 dark:text-neutral-500">
-                                        Pageviews
+                                        Obras Pendentes
                                     </p>
                                 </div>
 
