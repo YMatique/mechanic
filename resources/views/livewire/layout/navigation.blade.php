@@ -45,6 +45,9 @@ new class extends Component
                     <x-nav-link :href="route('repair-order-submissions.create')" :active="request()->routeIs('repair-order-submissions.create')" wire:navigate>
                         {{ __('Formulário 4') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('repair-order-activities.create')" :active="request()->routeIs('repair-order-activities.create')" wire:navigate>
+                        {{ __('Formulário 5') }}
+                    </x-nav-link>
                 </div>
             </div>
 

@@ -9,7 +9,8 @@ use App\Livewire\RepairOrderInvoiceForm;
 use App\Livewire\RepairOrderInvoiceList;
 use App\Livewire\RepairOrderSubmissionForm;
 use App\Livewire\RepairOrderSubmissionList;
-
+use App\Livewire\RepairOrderActivityForm;
+use App\Livewire\RepairOrderActivityList;
 Route::view('/', 'welcome');
 
 Route::view('dashboard', 'dashboard')
@@ -28,5 +29,7 @@ Route::group(['prefix'=>'dashboard', 'middleware'=>['auth', 'verified'],], funct
 Route::get('/repair-order-invoices/list', RepairOrderInvoiceList::class)->name('repair-order-invoices.index');
 Route::get('/repair-order-submissions', RepairOrderSubmissionForm::class)->name('repair-order-submissions.create');
 Route::get('/repair-order-submissions/list', RepairOrderSubmissionList::class)->name('repair-order-submissions.index');
+Route::get('/repair-order-activities', RepairOrderActivityForm::class)->name('repair-order-activities.create');
+Route::get('/repair-order-activities/list', RepairOrderActivityList::class)->name('repair-order-activities.index');
 });
 require __DIR__.'/auth.php';
